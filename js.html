@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head><script>
+      function display(){
+        var ans,a;
+        a=parseInt(form1.t1.value);
+        ans=1
+        for(i=2;i<a;i++){
+          if(a%i==0){
+            ans=0
+            break;
+          }
+        }
+        if(ans==1)
+        alert('number is prime');
+      else alert('number is not prime');
+      }
+    </script></head>
+    <body>
+<form name="form1">
+  Enter number(greater than one) to check :-
+  <input type="text" name="t1">
+  <input type="button" value="check Prime number" onclick="display()">
+</form>
+  </body>
+</html>
